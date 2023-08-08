@@ -4,9 +4,7 @@ export default function ehUmCPF(campo) { //exportada como padrao
     //recebe o valor do campo com o metodo replace, recebe dois parametros o que deseja substituir e pelo que quer substituir: onde ter ponto e hifen substituir por nada.
     
     if(validaNumerosRepetidos(cpf) || validaPrimeiroDigito(cpf) ||  validaSegundoDigito(cpf)) {
-        console.log("Esse cpf não existe!")
-    } else {
-        console.log("Existe!");
+        campo.setCustomValidity('Esse cpf não é valido !')
     }
 }
 
